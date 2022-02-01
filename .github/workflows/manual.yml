@@ -32,7 +32,7 @@ jobs:
       # Compiles classes to test 
       - name: compile classes
         working-directory: ./testresouces
-        run: javac -cp junit-4.12.jar;. ../../src/progpoeauto/Login.java ../../src/progoeauto/PROGPOEAUTO.java
+        run: javac -cp junit-4.12.jar;. "../../src/progpoeauto/Login.java" "../../src/progoeauto/PROGPOEAUTO.java"
       #run tests and output report 
       - name: run tests and create report 
         working-directory: ./testresouces
