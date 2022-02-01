@@ -33,6 +33,12 @@ jobs:
       - name: compile classes
         working-directory: ./src/progpoeauto
         run: javac -cp "../../testresouces/junit-4.12.jar" Login.java PROGPOEAUTO.java
+        
+      # list contents or directory
+      - name: List contents test package
+        working-directory: ./test/progpoeauto
+        run: ls
+        
       #run tests and output report 
       - name: run tests and create report 
         working-directory: ./test/progpoeauto
