@@ -35,9 +35,9 @@ jobs:
         run: javac -cp "../../testresouces/junit-4.12.jar" Login.java PROGPOEAUTO.java 
         
         # Compiles classes to test in test 
-      - name: compile classes in src directory 
+      - name: compile classes in test directory 
         working-directory: ./test/progpoeauto
-        run: javac -cp "../../testresouces/junit-4.12.jar" TestLogin.java PROGPOEAUTOTest.java 
+        run: javac -cp "../../testresouces/junit-4.12.jar" LoginTest.java PROGPOEAUTOTest.java 
         
       # list contents or directory
       - name: List contents test package
