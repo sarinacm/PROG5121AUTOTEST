@@ -32,7 +32,7 @@ jobs:
       # Compiles classes to test 
       - name: compile classes
         working-directory: ./src/progpoeauto
-        run: javac -cp "../../testresouces/junit-4.12.jar" Login.java PROGPOEAUTO.java
+        run: javac -cp "../../testresouces/junit-4.12.jar" Login.java PROGPOEAUTO.java "../../test/progpoeauto/TestLogin.java" "../../test/progpoeauto/PROGPOEAUTOTest.java"
         
       # list contents or directory
       - name: List contents test package
