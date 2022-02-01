@@ -32,7 +32,7 @@ jobs:
       # Compiles classes to test 
       - name: compile classes
         working-directory: ./src/progpoeauto
-        run: javac -cp "../../testresources/junit-platform-console-standalone-1.6.0.jar"  Login.java PROGPOEAUTO.java ../../test/progpoeauto/LoginTest.java ../../test/progpoeauto/PROGPOEAUTOTEST.java
+        run: javac -cp "../../testresources/junit-platform-console-standalone-1.6.0.jar"  Login.java PROGPOEAUTO.java ../../test/progpoeauto/LoginTest.java ../../test/progpoeauto/PROGPOEAUTOTest.java
 
       #run tests and output report 
       - name: run tests and create report 
