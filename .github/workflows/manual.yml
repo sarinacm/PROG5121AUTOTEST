@@ -37,12 +37,12 @@ jobs:
 
         
       # list contents or directory
-      - name: List contents test package
-        working-directory: ./test/progpoeauto
+      - name: List contents src package
+        working-directory: ./src/progpoeauto
         run: ls
         
       #run tests and output report 
       - name: run tests and create report 
         working-directory: ./src/progpoeauto
-        run: java -cp ../../testresouces/junit-4.12.jar:../../testresouces/hamcrest-core-1.3.jar:. org.junit.runner.JUnitCore LoginTest
+        run: java -cp ../../testresouces/junit-4.12.jar:../../testresouces/hamcrest-core-1.3.jar:. org.junit.runner.JUnitCore PROGPOEAUTOTest
     
