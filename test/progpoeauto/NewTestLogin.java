@@ -9,6 +9,7 @@ package progpoeauto;
  *
  * @author ctill
  */
-public class NewTestLogin {
+public class NewTestLogin 
+{
     
 }
