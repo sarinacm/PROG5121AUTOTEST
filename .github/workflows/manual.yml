@@ -31,12 +31,11 @@ jobs:
 
       # Compiles classes to test 
       - name: compile classes
-        working-directory: ./src/progpoeauto
-        run: javac -cp "../../testresources/junit-platform-console-standalone-1.6.0.jar"  Login.java PROGPOEAUTO.java ../../test/progpoeauto/LoginTest.java ../../test/progpoeauto/PROGPOEAUTOTest.java
-
+        working-directory: ./testresources
+        run: javac -cp junit-4.12.jar;. ../src/progpoeauto/Login.java ../src/progoeauto/PROGPOEAUTO.java
       #run tests and output report 
       - name: run tests and create report 
         working-directory: ./testresources
-        run: java -jar "junit-platform-console-standalone-1.6.0.jar" -cp "." --select-class ../../test/progpoeauto/LoginTest --reports-dir ="reports"
+        run: java -cp jumit-4.12.jar;hamcrest-core-1.3.jar;. org.junit.runner.JUnitCore  ../test/progpoeauto LoginTest PROGPOEAUTOTest
 
     
