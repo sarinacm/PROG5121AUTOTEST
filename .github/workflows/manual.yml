@@ -34,7 +34,12 @@ jobs:
         working-directory: ./src/progpoeauto
         run: javac -cp "../../testresouces/junit-4.12.jar" Login.java PROGPOEAUTO.java "../../test/progpoeauto/PROGPOEAUTOTest.java"  "../../test/progpoeauto/LoginTest.java"
         
-
+      # copy compiled classes to test directory 
+      - name : copy compiled classes to test directory 
+        working-directory: ./test/progpoeauto
+        run: cp ../../src/progpoeauto/Login.class .
+      
+      
         
       # list contents or directory
       - name: List contents test package
